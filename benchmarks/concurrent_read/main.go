@@ -65,7 +65,17 @@ func getJobs() []*job.Job {
 		},
 		&job.Job{
 			Protocol:       "GRPC",
-			Connections:    0,
+			Connections:    5,
+			Implementation: "google",
+		},
+		&job.Job{
+			Protocol:       "GRPC",
+			Connections:    10,
+			Implementation: "google",
+		},
+		&job.Job{
+			Protocol:       "GRPC",
+			Connections:    50,
 			Implementation: "google",
 		},
 	}
